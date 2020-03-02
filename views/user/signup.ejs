@@ -386,23 +386,26 @@
         </div>
 
         <!-- Login Form -->
+
         <form id="myform" action="/user/submit" method="post">
           <input
             type="text"
-            id="login"
+            id="full_name"
             class="fadeIn second"
             name="full_name"
             data-placeholder=""
             placeholder="Full name"
+            required
           />
 
           <input
             type="text"
-            id="login"
+            id="user_name"
             class="fadeIn second"
             name="user_name"
             data-placeholder=""
             placeholder="User name"
+            required
           />
 
           <input
@@ -411,6 +414,7 @@
             class="fadeIn third"
             name="password"
             placeholder="Password"
+            required
           />
 
           <input
@@ -418,15 +422,19 @@
             id="confirm_password"
             class="fadeIn third"
             placeholder="Confirm Password"
+            required
           />
 
+          <div id="message"></div>
+
           <input
-            type="text"
-            id="login"
+            type="email"
+            id="email"
             class="fadeIn second"
             name="email"
             data-placeholder=""
             placeholder="E-mail"
+            required
           />
 
           <input
@@ -436,20 +444,26 @@
             name="dob"
             data-placeholder=""
             placeholder="Date of Birth"
+            required
           />
 
           <input
-            type="text"
+            type="hidden"
             id="login"
             class="fadeIn second"
             name="login_type"
             value="normal login"
-            hidden
           />
 
           <button type="submit" class="fadeIn fourth">Sign Up</button><br />
         </form>
+        <!-- <div id="error_message" style="color: red;"></div> -->
       </div>
     </div>
   </body>
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/javascripts/user_register.js"></script>
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/popper.js"></script>
 </html>

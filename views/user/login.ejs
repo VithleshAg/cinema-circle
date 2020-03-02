@@ -391,31 +391,32 @@
         </div>
 
         <!-- Login Form -->
+        <form id="myform" action="/user/checkLogin" method="post">
+          <input
+            type="text"
+            id="login"
+            class="fadeIn second"
+            name="user_name"
+            data-placeholder=""
+            placeholder="User name"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            class="fadeIn third"
+            name="password"
+            placeholder="Password"
+            required
+          />
 
-        <input
-          type="text"
-          id="login"
-          class="fadeIn second"
-          name="login"
-          data-placeholder=""
-          placeholder="User name"
-        />
-        <input
-          type="password"
-          id="password"
-          class="fadeIn third"
-          name="login"
-          placeholder="Password"
-        />
+          <button class="fadeIn fourth">Login</button>
+        </form>
 
-        <a href="home.html"
-          ><button class="fadeIn fourth" value="Login">Login</button></a
-        >
-
-        <a href="/user/signup"
-          ><button class="fadeIn fourth" value="Login">Sign Up</button></a
+        <a href="/user/signup"><button class="fadeIn fourth">Sign Up</button></a
         ><br />
 
+        <h5 style="color :red"><%=message%></h5>
         <!-- Remind Passowrd -->------------Or------------
         <div id="formFooter">
           <a href="#" class="fa fa-facebook"></a>

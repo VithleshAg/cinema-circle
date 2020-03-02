@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Cinema Circle</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/core-img/CC.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css1/style.css">
+
+	<style>
+	.classynav ul li a {
+    border:1px solid white;
+    border-radius:15px;
+    font-size: 12px;
+	padding: 0 12px;
+    background-color:white;
+	}
+    .classynav ul li.active a {
+    position: relative;
+    z-index: 1;
+    background-color: #F39C12;
+    border:1px solid #F39C12;
+}
+	
+	
+	
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button3:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button4:hover {background-color: #F9A602;}
+
+   input[type=text]{
+        width:100px;
+        height:20px;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+</style>
+	</style>
+
+</head>
+
+<body>
+  
+    <%- include("../partials/header.ejs") %>
+    <!-- Header Area End -->
+
+
+    <!-- Blog Area Start -->
+    <section class="roberto-blog-area section-padding-100-0"><br>
+        <div class="container">
+            <div class="row" style="background-color:#fff; height: 450px;overflow-y: scroll;">
+                <!-- Single Post Area -->
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div>
+         <center>
+
+            
+<form id="myform" action="/user/profile_submit" method="post" enctype="multipart/form-data">
+<table style="white-space: nowrap;"><br>
+<tr><td>Name: </td> <td> <input type="text" name="name" placeholder=""> </td></tr>	
+<tr><td>Email</td><td>  <input type="email" name="email" placeholder=""> </td></tr>	
+<tr><td>Phone Number:</td> <td>  <input type="number" name="phone" placeholder=""> </td></tr>	
+<tr><td>Gender:</td> <td>  <input type="text" name="gender" placeholder=""> </td></tr>	
+<tr><td>Age:</td> <td>  <input type="text" name="age" placeholder=""> </td></tr>	
+<tr><td>Living Place:</td> <td>  <input type="text" name="place" placeholder=""> </td></tr>	
+<tr><td>State</td> <td>  <input type="text" name="state" placeholder=""> </td></tr>	
+<tr><td>Language Known</td> <td>  <input type="text" name="language" placeholder=""> </td></tr>	
+
+<tr><td>Years in Cinema Industry</td> <td>  <input type="number" name="years" placeholder=""> </td></tr>	
+<tr><td>Image 1:</td> <td>  <input type="file" name="image" placeholder=""> </td></tr>	
+<tr><td>Image 2:</td> <td>  <input type="file" name="portfolio" placeholder=""> </td></tr>
+</table><br>
+<center>
+<button type="submit" style="background-color:#2C2E36;color:white;   border-radius: 6px;" >Save</button>
+</form>
+</center>
+</center>
+<center>
+    <a href="/user/logout"><button style="background-color:#2C2E36;color:white;   border-radius: 6px;" >Logout</button></a>
+    </center>
+    <br><br>
+                
+
+ 
+           
+
+            </div>
+        </div>
+    </section>
+    
+    <br>
+    <!-- Blog Area End -->
+
+    <!-- Call To Action Area Start -->
+   
+
+    <!-- Footer Area Start -->
+    <%- include("../partials/footer.ejs") %>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="/js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="/js/default-assets/active.js"></script>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</body>
+
+</html>

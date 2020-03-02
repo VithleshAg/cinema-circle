@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Cinema Circle</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/core-img/CC.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css1/style.css">
+
+	<style>
+	.classynav ul li a {
+    border:1px solid white;
+    border-radius:15px;
+    font-size: 12px;
+	padding: 0 12px;
+    background-color:white;
+	}
+    .classynav ul li.active a {
+    position: relative;
+    z-index: 1;
+    background-color: #F39C12;
+    border:1px solid #F39C12;
+}
+	
+	
+	
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button3:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button4:hover {background-color: #F9A602;}
+
+   input[type=text]{
+        width:100px;
+        height:20px;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+</style>
+	</style>
+
+</head>
+
+<body>
+  
+        <%- include("../partials/header.ejs") %>
+    <!-- Header Area End -->
+
+
+   
+
+   
+
+    <!-- Blog Area Start -->
+    <section class="roberto-blog-area section-padding-100-0"><br>
+        <div class="container">
+            <form id="myform" action="/ad_register/ad_session" method="post">
+            <div class="row" style="background-color:#fff; height: 450px;overflow-y: scroll;">
+                <!-- Single Post Area -->
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div>
+         <center>
+<table style="white-space: nowrap;"><br>
+<tr>
+<td>Select Action:</td> 
+</tr>
+<tr><td><a href="/ad_register/register_spot">Spot Call</td></tr>	
+<tr><td><a href="/ad_register/register_audition">Audition</td></tr>
+<tr><td><a href="/ad_register/register_event">Event</td></tr>	
+<tr><td><a href="/ad_register/register_workshop">Workshop</td></tr>
+
+
+</table>
+<br>
+
+</center><br><br>
+
+</div>
+</div>
+
+           
+
+            </div>
+            </form>
+        </div>
+    </section>
+    
+    <br>
+    <!-- Blog Area End -->
+
+    <!-- Call To Action Area Start -->
+   
+
+    <!-- Footer Area Start -->
+    <%- include("../partials/footer.ejs") %>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="/js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="/js/default-assets/active.js"></script>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="/my_javascripts/ads.js"></script>
+</body>
+
+</html>

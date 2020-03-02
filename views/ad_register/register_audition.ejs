@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Cinema Circle</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/core-img/CC.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css1/style.css">
+
+	<style>
+	.classynav ul li a {
+    border:1px solid white;
+    border-radius:15px;
+    font-size: 12px;
+	padding: 0 12px;
+    background-color:white;
+	}
+    .classynav ul li.active a {
+    position: relative;
+    z-index: 1;
+    background-color: #F39C12;
+    border:1px solid #F39C12;
+}
+	
+	
+	
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button3:hover {
+  background-color: #F9A602;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+}
+
+.button4:hover {background-color: #F9A602;}
+
+   input[type=text]{
+        width:100px;
+        height:20px;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+</style>
+	</style>
+
+</head>
+
+<body>
+  
+        <%- include("../partials/header.ejs") %>
+    <!-- Header Area End -->
+
+
+   
+
+   
+
+    <!-- Blog Area Start -->
+    <section class="roberto-blog-area section-padding-100-0"><br>
+        <div class="container">
+            <form id="myform" action="/ad_register/ad_session" method="post">
+            <div class="row" style="background-color:#fff; height: 450px;overflow-y: scroll;">
+                <!-- Single Post Area -->
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div>
+         <center>
+<table style="white-space: nowrap;"><br>
+<tr>
+<td>Select Action:</td> 
+<td><select class="five" name="ad_type" style=" border-radius: 6px;" required>
+        <option class="ad_type" value="audition" selected>Audition</option> 
+        <!-- <option class="ad_type" value="workshop">Workshop</option> 
+        <option class="ad_type" value="audition">Auditions</option> 
+        <option class="ad_type" value="event">Event</option>  -->
+    </select> 
+</td> </tr>
+
+  <td>Select Industry:</td> 
+  <td><select class="ten" name="industry" style=" border-radius: 6px;" required>
+          <option class="industry" value="undefined">select</option> 
+          <option class="industry" value="bollywood">Bollywood (Hindi)</option> 
+          <option class="industry" value="hollywood">Hollywood (English)</option> 
+          <option class="industry" value="mollywood">Mollywood (Malayalam)</option> 
+          <option class="industry" value="kollywood">Kollywood (Tamil)</option>
+          <option class="industry" value="sandalwood">Sandalwood (Kannada)</option> 
+          <option class="industry" value="tollywood">Tollywood (Telugu)</option> 
+          <option class="industry" value="tollywood">Tollywood (Bengali)</option> 
+          <option class="industry" value="marathi">Marathi Film (Marathi)</option> 
+          <option class="industry" value="other">Other regional (other languages)</option>  
+      </select> 
+  </td> </tr>
+  		
+<tr><td>Langauge</td><td>  <input type="text" name="language" placeholder="" required> </td></tr>	
+<tr>
+  <td>Select Department:</td>
+  <td><select id = 'department' name="department"  style=" border-radius: 6px;" required>
+          <option  value="undefined">select</option> 
+          <option  value="artist">Artist</option>
+          <option  value="art">Art</option> 
+          <option class="department" value="direction">Direction</option> 
+          <option class="department" value="art">Art</option> 
+          <option class="department" value="camera">Camera</option>
+          <option class="department" value="music">Music</option> 
+          <option class="department" value="editing">Editing</option> 
+          <option class="department" value="story">Story-Screenplay</option> 
+          <option class="department" value="lyrics">Lyrics</option> 
+          <option class="department" value="production">Production</option>
+          <option class="department" value="costume">Costume</option> 
+          <option class="department" value="singers">Singers</option> 
+          <option class="department" value="dubbing">Dubbing,Mixing,and Recording</option> 
+          <option class="department" value="ufx">UFX, Coloring, Graphics, and Animation</option> 
+          <option class="department" value="choreagraphy">Choreagraphy</option>
+          <option class="department" value="unit">Unit and Light</option> 
+          <option class="department" value="producers">Producers</option> 
+          <option class="department" value="fight">Fight</option> 
+          <option class="department" value="visual">Visual</option> 
+          <option class="department" value="modeling">Modeling</option>
+          <option class="department" value="publicity">Publicity</option> 
+          <option class="department" value="technicians">Technicians(Post-Production)</option> 
+          <option class="department" value="studios">Studios</option> 
+          <option class="department" value="shooting">Shooting Spots</option>    
+      </select> 
+  </td> </tr>	
+<tr><td>Looking For:</td> <td>  <input type="text" name="sub_department" placeholder="" required> </td></tr>	
+<tr><td>Age</td></tr>
+<tr><td>From:</td> <td>  <input type="text" name="start_age" placeholder="" required> </td></tr>
+<tr><td>to:</td> <td>  <input type="text" name="end_age" placeholder="" required> </td></tr>	
+<tr><td>Shooting Type:</td> <td>  <input type="text" name="shooting" placeholder="" required> </td></tr>	
+<tr><td>Movie Name</td> <td>  <input type="text" name="movie" placeholder="" required> </td></tr>	
+<tr><td>Production House</td> <td>  <input type="text" name="production" placeholder="" required> </td></tr>	
+<tr><td>Selected Profile Only</td> <td>  <input type="text" name="selected_profile" placeholder="" required> </td></tr>	
+<tr><td>Date of Start</td> <td>  <input type="text" name="start_date" placeholder="" required> </td></tr>	
+<tr><td>Date of End</td> <td>  <input type="text" name="end_date" placeholder="" required> </td></tr>	
+<tr><td>start Timing:</td> <td>  <input type="text" name="start_time" placeholder="" required> </td></tr>
+<tr><td>End Timing:</td> <td>  <input type="text" name="end_time" placeholder="" required> </td></tr>	
+<tr><td>Address:</td> <td>  <input type="text" name="address"  placeholder="" required> </td></tr>	
+<tr><td>City:</td> <td>  <input type="text" name="city"  placeholder="" required> </td></tr>	
+<tr><td>State:</td> <td>  <input type="text" name="state"  placeholder="" required> </td></tr>	
+<tr><td>Pincode:</td> <td>  <input type="tel" name="pincode" placeholder="" required> </td></tr>	
+<tr><td>Name:</td> <td>  <input type="text" name="name" placeholder="" required> </td></tr>	
+<tr><td>Email:</td> <td>  <input type="text" name="email" placeholder="" required> </td></tr>	
+<tr><td>Phone number:</td> <td>  <input type="tel" name="phone" placeholder="" required> </td></tr>	
+<tr><td>Write Something about Your AD:</td> <td>  <input type="text" name="description" placeholder="" required> </td></tr>	
+
+
+</table>
+<br>
+<center><button type="submit" style="background-color:#2C2E36;color:white;   border-radius: 6px;" >Post Your Ad</button></a></center>
+</center><br><br>
+
+</div>
+</div>
+
+           
+
+            </div>
+            </form>
+        </div>
+    </section>
+    
+    <br>
+    <!-- Blog Area End -->
+
+    <!-- Call To Action Area Start -->
+   
+
+    <!-- Footer Area Start -->
+    <%- include("../partials/footer.ejs") %>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="/js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="/js/default-assets/active.js"></script>
+    
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="/my_javascripts/ads.js"></script>
+</body>
+
+</html>
