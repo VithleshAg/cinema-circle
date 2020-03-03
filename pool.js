@@ -11,7 +11,7 @@ var mysql = require("mysql");
 
 var pool = mysql.createPool({
   host: "68.66.224.58",
-  user: "cinemacircle",
+  user: "saanviin_cinemauser",
   password: "Reactnative@2018",
   database: "saanviin_cinema",
   multipleStatements: true
